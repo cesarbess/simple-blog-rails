@@ -1,4 +1,7 @@
 <h1>Blog Posts</h1>
+<% if @posts.empty?%>
+  <p> No posts found with that title </p>
+<% end %>
 <% @posts.each do |post| %>
   <div class="well">
     <h3><%= post.title %> </h3>

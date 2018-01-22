@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   #Resource
   resources :posts do
+    collection do
+      get :search
+    end
     resources :comments
   end
 
